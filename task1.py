@@ -6,3 +6,11 @@ def get_distinct_list(list1, list2):
     т.е. взята нижняя граница для худшего случая.
     """
     return [item for item in list1 if item not in list2]
+
+
+if __name__ == '__main__':
+    l1 = [1, 3, 6, 4]
+    l2 = [2, 3]
+    expected = [1, 6, 4]
+
+    assert get_distinct_list(l1, l2) == expected
